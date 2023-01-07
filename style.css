@@ -1,0 +1,113 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	flex-direction: column;
+	display: flex;
+	min-height: 100vh;
+	background-color: rgb(56, 45, 45);
+	color: white;
+}
+header{
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+header h2{
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: rgb(255, 255, 255);
+	margin-bottom: 1rem;
+}
+input, button{
+	border: none;
+	background: none;
+}
+#new_task{
+	display: block;
+}
+#input_task{
+	flex: 1 1 0%;
+	margin: 0 0.5rem;
+	font-weight: 700;
+	font-size: 1.25rem;
+	width: 70%;
+	margin-top: 1rem;
+	border-radius: 1rem;
+	background-color: grey;
+	padding: 1rem;
+	margin-right: 1rem;
+}
+#input_task::-webkit-input-placeholder{
+	color: rgb(78, 78, 78);
+}
+#add_btn{
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-weight: 700;
+	font-size: 1.25rem;
+	transform: 0.4s;
+	color: white;
+	text-transform: uppercase;
+}
+#add_btn:hover{
+	color: red;
+	cursor: pointer;
+	font-weight: 700;
+}
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+.task_list{
+	padding: 1rem;
+}
+.task_list h3{
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: rgb(255, 255, 255);
+	margin-bottom: 1rem;
+}
+
+#tasks .task{
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(156, 156, 236);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+#tasks .task cont .text:not(:read-only){
+    color: blueviolet;
+}
+.task .cont {
+	flex: 1 1.0%;
+}
+.task .cont .text{
+	color: rgb(0, 0, 0);
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button{
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+.task .actions button:hover{
+ color: red;
+}
